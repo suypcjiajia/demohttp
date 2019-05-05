@@ -1,0 +1,52 @@
+1. json
+apt-get install libjsoncpp-dev
+头文件在：
+/usr/include/jsoncpp/json
+动态库在：
+/usr/lib/x86_64-linux-gnu/libjsoncpp.so.1.7.2
+
+
+
+2. libevent
+官方地址http://libevent.org/
+./configure –prefix=/usr
+make
+make install
+
+
+
+3.openssl
+ apt-get install openssl
+ apt-get install libssl-dev
+
+
+
+4.Cryptopp
+ apt-get install libcrypto++*
+
+
+
+5. libcurl
+apt-get install libcurl4-openssl-dev
+头文件：/usr/include/curl
+库文件：/usr/lib/x86_64-linux-gnu/libcurl.so.4
+
+
+
+6.libuuid
+apt-get install uuid-dev
+
+
+
+7.Libevhtp
+github下载:https://github.com/criticalstack/libevhtp
+cd build
+cmake ..
+make
+make install
+
+或：apt-get instal libevhtp-dev
+
+
+8. mysqlclient-dev
+  apt-get install libmysqlclient-dev

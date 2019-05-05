@@ -1,0 +1,39 @@
+1.目录描述
+
+./bin
+程序生成目标文件的存放目录，包括配置文件等
+./certs
+https证书目录
+./inc
+公用头文件
+./lib
+第3方库，.so .a
+./libsrc
+公用源文件
+./package
+第3方源码包
+./script
+脚本文件
+./tool
+测试工具等
+./demo
+一个例子，启动了http服务，接口有添加用户查询用户
+
+
+
+2. 开发环境
+  linux
+  见同目录"搭建服务器开发环境"说明
+  用QT作为编码编译工具，先自行安装QT(http://download.qt.io/archive/qt/5.12/5.12.2/) 视环境而定可能还要安装g++ make
+  项目没有用QT库
+
+
+3. 发布和布署
+  以demo为例子：
+  创建日志目录: mkdir -p /log/demo
+  创建程序目录: mkdri -p /dl/demo
+  目标程序放在程序目录中
+  创建库目录: mkdir -p /dl/demo/lib
+  .so .a库放在库目录
+  echo "/ld/lib" > /etc/ld.so.conf.d/dl.conf
+  ldconfig
